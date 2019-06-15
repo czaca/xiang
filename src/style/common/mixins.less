@@ -1,0 +1,20 @@
+.content{
+  color: #589daf;
+    border: 1px solid #589daf;
+    font-size: 13px;
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 0 3px;
+}
+.border-bottom{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    bottom:0;
+    height: 1px;
+    width: 100%;
+    background: #ededed;
+    transform: scaleY(1);
+  }
+}
